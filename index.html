@@ -1,23 +1,777 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Vasu Rayudu | AI Engineer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #0f172a;
+            padding: 18px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            color: #7dd3fc;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: #e2e8f0;
+        }
+
+        .buttons a {
+            display: inline-block;
+            padding: 12px 22px;
+            margin: 7px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            background: #38bdf8;
+            color: #0f172a;
+        }
+
+        .buttons a:hover {
+            background: white;
+        }
+
+        section {
+            padding: 75px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 40px;
+            color: #0f172a;
+        }
+
+        .about {
+            max-width: 950px;
+            margin: auto;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .skill-card h3 {
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        .experience-card,
+        .project-card,
+        .education-card {
+            background: white;
+            max-width: 950px;
+            margin: 0 auto 25px;
+            padding: 28px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .experience-card h3,
+        .project-card h3 {
+            color: #1d4ed8;
+        }
+
+        .experience-card h4 {
+            margin: 5px 0 15px;
+            color: #64748b;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 12px;
+        }
+
+        .project-card p {
+            margin: 10px 0;
+        }
+
+        .tech {
+            color: #475569;
+            font-weight: bold;
+        }
+
+        .coming-soon {
+            color: #ea580c;
+            font-weight: bold;
+        }
+
+        .education-card {
+            text-align: center;
+        }
+
+        .contact {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+        }
+
+        .contact .section-title {
+            color: white;
+        }
+
+        .contact a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        .contact p {
+            margin: 10px;
+            font-size: 17px;
+        }
+
+        footer {
+            background: #020617;
+            color: #94a3b8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+
+            nav .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+
+            section {
+                padding: 55px 6%;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Hi, I'm Vasu Rayudu</h1>
+<!-- Navigation -->
+<nav>
+    <div class="nav-container">
 
-    <h2>AI Engineer | Generative AI | RAG | LLMs | Machine Learning</h2>
+        <h2>Vasu Rayudu</h2>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- Hero Section -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Hi, I'm Vasu Rayudu 👋</h1>
+
+        <h2>AI Engineer | Generative AI | RAG | LLMs | Machine Learning</h2>
+
+        <p>
+            AI Engineer with 5 years of experience building Generative AI,
+            Retrieval-Augmented Generation, Machine Learning, and cloud-based
+            AI solutions across finance, healthcare, and insurance domains.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#projects">
+                View Projects
+            </a>
+
+            <a href="https://github.com/vasurayudu023-del/RESUME/blob/main/Vasu_AI%20Engineer_Resume.pdf"
+               target="_blank">
+                View Resume
+            </a>
+
+            <a href="https://github.com/vasurayudu023-del"
+               target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/vasu-lenka"
+               target="_blank">
+                LinkedIn
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- About -->
+<section id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+
+        <p>
+            I am an AI Engineer with 5 years of experience building
+            Generative AI, RAG, Machine Learning, and cloud-based AI solutions.
+        </p>
+
+        <br>
+
+        <p>
+            I specialize in scalable RAG pipelines, LLM applications,
+            multi-agent systems, prompt engineering, AI workflows,
+            API development, MLOps, and production AI systems.
+        </p>
+
+        <br>
+
+        <p>
+            My experience includes working with Python, LangChain,
+            LangGraph, Snowflake AI, AWS, Azure, GCP, vector databases,
+            Docker, Kubernetes, CI/CD, and model monitoring.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Skills -->
+<section id="skills">
+
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+
+            <h3>🤖 Generative AI & LLMs</h3>
+
+            <p>
+                GPT-4o, GPT-4, Llama, RAG, Multi-Agent Systems,
+                LangChain, LangGraph, Prompt Engineering,
+                Fine-Tuning, LoRA, PEFT, Embeddings,
+                Model Evaluation
+            </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <h3>💻 Programming & APIs</h3>
+
+            <p>
+                Python, Java, SQL, FastAPI,
+                Flask, REST APIs, Microservices
+            </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <h3>☁️ Cloud</h3>
+
+            <p>
+                AWS, Azure, GCP, SageMaker,
+                Bedrock, Lambda, Glue, Kinesis,
+                EMR, ECS, Fargate
+            </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <h3>⚙️ MLOps</h3>
+
+            <p>
+                MLflow, Model Registry, CI/CD,
+                Automated Training, Model Monitoring,
+                Drift Detection, GitHub Actions,
+                GitLab CI/CD
+            </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <h3>🗄️ Data & Databases</h3>
+
+            <p>
+                Snowflake, Snowflake Cortex AI,
+                Snowpark, Snowpipe, SQL, NoSQL,
+                Apache Spark, dbt
+            </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <h3>🔎 Vector Databases</h3>
+
+            <p>
+                Pinecone, FAISS, Chroma,
+                Embeddings, Semantic Search,
+                Retrieval Systems
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Experience -->
+<section id="experience">
+
+    <h2 class="section-title">Professional Experience</h2>
+
+
+    <div class="experience-card">
+
+        <h3>AI Engineer | Snowflake AI Platform Specialist</h3>
+
+        <h4>
+            Advisors Excel — Topeka, KS |
+            Mar 2025 – Present
+        </h4>
+
+        <ul>
+
+            <li>
+                Designed scalable data and AI pipelines using
+                AWS Glue, Snowflake Snowpipe, Python,
+                LangChain, and cloud technologies.
+            </li>
+
+            <li>
+                Reduced data integration and text-chunking latency
+                by 30% using optimized Snowflake SQL and Apache Spark.
+            </li>
+
+            <li>
+                Built a real-time fraud and billing anomaly detection
+                solution, improving classification accuracy by 25%.
+            </li>
+
+            <li>
+                Developed real-time document streaming and vectorization
+                workflows using Kinesis, Kafka, Snowflake Cortex AI,
+                and Pinecone.
+            </li>
+
+            <li>
+                Automated model training, deployment, and evaluation
+                using AWS Step Functions, Lambda, and Snowflake Tasks.
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="experience-card">
+
+        <h3>AI Engineer</h3>
+
+        <h4>
+            Fortis Healthcare — India |
+            Oct 2021 – Nov 2023
+        </h4>
+
+        <ul>
+
+            <li>
+                Designed semantic retrieval pipelines using BM25,
+                Gemini embeddings, and cross-encoder reranking,
+                improving retrieval precision by 30%.
+            </li>
+
+            <li>
+                Built AI agents using AWS Bedrock Agents for
+                retrieval, document processing, calculations,
+                API integrations, and compliance workflows.
+            </li>
+
+            <li>
+                Developed Generative AI conversational assistants
+                using GPT-4, Claude, Falcon, SageMaker, and Lambda,
+                reducing manual resolution time by 50%.
+            </li>
+
+            <li>
+                Implemented LoRA and PEFT fine-tuning for
+                domain-specific LLM applications.
+            </li>
+
+            <li>
+                Developed scalable AI microservices using
+                FastAPI, AWS ECS, and Fargate.
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="experience-card">
+
+        <h3>Data Scientist</h3>
+
+        <h4>
+            Genpact — India |
+            May 2020 – Sept 2021
+        </h4>
+
+        <ul>
+
+            <li>
+                Analyzed retail data and generated business insights
+                using Python, Pandas, NumPy, and SQL.
+            </li>
+
+            <li>
+                Built and evaluated machine learning models.
+            </li>
+
+            <li>
+                Developed NLP-based analytics solutions using
+                Python, SQL, and Tableau.
+            </li>
+
+            <li>
+                Created Tableau dashboards for business stakeholders.
+            </li>
+
+            <li>
+                Performed SQL-based data validation and reconciliation.
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+<!-- Projects -->
+<section id="projects">
+
+    <h2 class="section-title">Featured Projects</h2>
+
+
+    <div class="project-card">
+
+        <h3>💳 Real-Time Fraud Detection System</h3>
+
+        <p>
+            AI-powered solution for identifying suspicious transactions
+            and billing anomalies using machine learning.
+        </p>
+
+        <p class="tech">
+            Python • Machine Learning • FastAPI • AWS • Snowflake
+        </p>
+
+        <p class="coming-soon">
+            GitHub Repository: Coming Soon
+        </p>
+
+    </div>
+
+
+    <div class="project-card">
+
+        <h3>📚 Enterprise RAG System</h3>
+
+        <p>
+            Retrieval-Augmented Generation solution for processing
+            enterprise documents and generating context-aware responses.
+        </p>
+
+        <p class="tech">
+            LangChain • RAG • Snowflake Cortex AI • Pinecone • AWS
+        </p>
+
+        <p class="coming-soon">
+            GitHub Repository: Coming Soon
+        </p>
+
+    </div>
+
+
+    <div class="project-card">
+
+        <h3>🤖 Agentic AI Document Automation</h3>
+
+        <p>
+            AI-agent workflow for document classification,
+            information extraction, retrieval, and compliance processing.
+        </p>
+
+        <p class="tech">
+            AWS Bedrock Agents • Python • FastAPI • LLMs • RAG
+        </p>
+
+        <p class="coming-soon">
+            GitHub Repository: Coming Soon
+        </p>
+
+    </div>
+
+
+    <div class="project-card">
+
+        <h3>🔎 Semantic Search & Reranking</h3>
+
+        <p>
+            Multi-stage retrieval pipeline combining lexical search,
+            embeddings, and cross-encoder reranking.
+        </p>
+
+        <p class="tech">
+            BM25 • Gemini Embeddings • Cross-Encoder • Python
+        </p>
+
+        <p class="coming-soon">
+            GitHub Repository: Coming Soon
+        </p>
+
+    </div>
+
+
+    <div class="project-card">
+
+        <h3>💬 Generative AI Conversational Assistant</h3>
+
+        <p>
+            Production-oriented conversational AI application
+            using multiple LLMs and cloud-based inference services.
+        </p>
+
+        <p class="tech">
+            GPT-4 • Claude • AWS SageMaker • Lambda • FastAPI
+        </p>
+
+        <p class="coming-soon">
+            GitHub Repository: Coming Soon
+        </p>
+
+    </div>
+
+
+    <div class="project-card">
+
+        <h3>⚙️ LLMOps & Model Deployment Pipeline</h3>
+
+        <p>
+            Automated model versioning, testing, deployment,
+            monitoring, and continuous-delivery workflow.
+        </p>
+
+        <p class="tech">
+            MLflow • SageMaker Model Registry • AWS Step Functions • Azure
+        </p>
+
+        <p class="coming-soon">
+            GitHub Repository: Coming Soon
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Education -->
+<section id="education">
+
+    <h2 class="section-title">Education</h2>
+
+    <div class="education-card">
+
+        <h3>🎓 Master's in Business Analytics</h3>
+
+        <p>
+            <strong>Lewis University — Romeoville, Illinois</strong>
+        </p>
+
+        <p>
+            January 2024 – December 2025
+        </p>
+
+        <p>
+            GPA: 3.7 / 4.0
+        </p>
+
+    </div>
+
+
+    <div class="education-card">
+
+        <h3>🎓 Bachelor's in Electronics & Communications Engineering</h3>
+
+        <p>
+            <strong>Institute of Aeronautical Engineering</strong>
+        </p>
+
+        <p>
+            August 2017 – May 2021
+        </p>
+
+        <p>
+            GPA: 7.7 / 10
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="contact">
+
+    <h2 class="section-title">Contact Me</h2>
 
     <p>
-        Welcome to my professional portfolio.
+        📧 Email:
+        <a href="mailto:vasu.rayudu023@gmail.com">
+            vasu.rayudu023@gmail.com
+        </a>
     </p>
 
     <p>
-        I specialize in Generative AI, RAG, Machine Learning,
-        LLM applications, Snowflake AI, AWS, Azure, and GCP.
+        💼 LinkedIn:
+        <a href="https://www.linkedin.com/in/vasu-lenka"
+           target="_blank">
+            linkedin.com/in/vasu-lenka
+        </a>
     </p>
+
+    <p>
+        💻 GitHub:
+        <a href="https://github.com/vasurayudu023-del"
+           target="_blank">
+            github.com/vasurayudu023-del
+        </a>
+    </p>
+
+    <p>
+        📄 Resume:
+        <a href="https://github.com/vasurayudu023-del/RESUME/blob/main/Vasu_AI%20Engineer_Resume.pdf"
+           target="_blank">
+            View My Resume
+        </a>
+    </p>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 Vasu Rayudu | AI Engineer Portfolio
+    </p>
+
+</footer>
 
 </body>
 </html>
